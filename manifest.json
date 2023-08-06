@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Twitch Front-Page Carousel Hider",
+  "version": "1.0",
+  "description": "Hide the front-page carousel on Twitch.",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["https://www.twitch.tv/"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.twitch.tv/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
